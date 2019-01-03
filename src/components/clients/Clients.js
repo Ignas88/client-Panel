@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import  { Link } from "react-router-dom";
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { firestoreConnect } from 'react-redux-firebase';
@@ -77,8 +77,8 @@ class Clients extends Component {
 }
 
 Clients.propTypes = {
-  firestore: Proptypes.object.isRequired,
-  clients: Proptypes.array
+  firestore: PropTypes.object.isRequired,
+  clients: PropTypes.array
 };
 
 export default compose(

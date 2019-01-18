@@ -11,7 +11,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         message: action.message,
-        massageType: action.messageType
+        messageType: action.messageType
       };
     default:
       return state
